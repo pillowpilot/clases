@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{color}  %% Allow color names
+\lstdefinestyle{customstyle}{
+  belowcaptionskip=1\baselineskip,
+  xleftmargin=\parindent,
+  language=C++,   %% Change this to whatever you write in
+  breaklines=true, %% Wrap long lines
+  breakatwhitespace=true,
+  postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}},
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{Gray},
+  stringstyle=\color{Black},
+  keywordstyle=\bfseries\color{OliveGreen},
+  identifierstyle=\color{blue},
+  xleftmargin=-8em,
+}
+%\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+\newcommand{\filepath}{../suffixArray.cpp}
+\newcommand{\code}[2]{\lstinputlisting[firstline=#1, lastline=#2, style=customstyle]{\filepath}}
+
+\begin{document}
+
+\section{Cabezera y Programa Principal}
+\code{0}{88}
+
+\newpage
+\section{Construcción del Suffix Array en $O(n^2\log{n})$}
+\code{90}{123}
+
+\newpage
+\section{Construcción del Suffix Array en $O(n\log^2{n})$}
+\code{125}{211}
+
+\newpage
+\section{Construcción del LCP Array en  $O(n^2)$}
+\code{213}{240}
+
+\newpage
+\section{Construcción del LCP Array en $O(n)$}
+\code{242}{291}
+
+\newpage
+\section{Funciones Auxiliares}
+\code{293}{331}
+
+\end{document}
