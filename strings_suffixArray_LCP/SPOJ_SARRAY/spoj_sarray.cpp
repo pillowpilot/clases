@@ -76,10 +76,10 @@ int main(){
   
   string s;
   cin >> s;
-  auto sa = vector<size_t>();
+  auto sa = vector<size_t>(); // auto sa = suffixArray(s);
   suffixArray(s, sa);
-  for(size_t i: sa)
-    cout << i << ' ';
+  for(size_t i: sa) // for(size_t i = 0; i < sa.size(); i++)
+    cout << i << ' '; // cout << sa[i] << ' ';
   cout << endl;
   
   return 0;

@@ -1,0 +1,14 @@
+#include <cstdio>
+#include <vector>
+
+using namespace std;
+
+int main(){
+  int tests;
+
+  scanf("%d\n\n", &tests);
+  for(int test = 1; test <= tests; test++){
+
+  }
+  return 0;
+}
