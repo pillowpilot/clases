@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+#define CURRENT_RUN -1
+
+using namespace std;
+
+vector< string> map;
+vector< vector<int> > ids;
+int components;
+
+int ff(int x, int y){
+  if( ids[x][y] == CURRENT_RUN ){
+    
+  }
+}
+
+int main(){
+
+  
+  return 0;
+}
