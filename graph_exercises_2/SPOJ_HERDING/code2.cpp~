@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <limits>
+
+using namespace std;
+
+// Mapa (con las predicciones de las direcciones)
+vector< string> map;
+
+// Movimientos
+int dy[] = {0, 0, 1, -1}; // N S E W
+int dx[] = {-1, 1, 0, 0};
+
+int main(){
+  ios_base::sync_with_stdio(false);
+  int n, m;
+  cin >> n >> m; // Leemos n y m (dimensiones)
+
+  cin.ignore( numeric_limits<streamsize>::max(), '\n' ); // Ignorar todo hasta '\n';
+  // ignore(N, C): ignora hasta encontrar el caracter C o hasta ignorar un maximo de N caracteres
+  // numeric_limits<streamsize>: el tamaño maximo de un stream (la # maxima de caracteres ignorables)
+  // Tambien char c; while( cin >> c && c != '\n' );
+
+  // Leemos el mapa
+  for(int i = 0; i < n; i++){
+    string line;
+    getline(cin, line);
+    map.push_back(line);
+  }
+
+  // c++11
+  //for(auto s: map)
+  //cout << s << endl;
+
+  // Inicializamos los nodos como no visitados
+  ids = vector< vector<int> >(n, vector<int>(m, UNVISITED));
+
+  // Recorremos todos los nodos
+  total_components = 0;
+  for(int i = 0; i < n; i++){
+    for(int j = 0; j < m; j++){
+      
+    }
+  }
+
+  // Imprimimos el resultado
+  cout << total_components << endl;
+  
+  return 0;
+}
